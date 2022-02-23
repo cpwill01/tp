@@ -31,6 +31,10 @@ public class RemarkCommand extends Command {
     private final Index index;
     private final Remark remark;
 
+    /**
+     * @param index of the person in the filtered person list to add a remark
+     * @param remark the remark to be added
+     */
     public RemarkCommand(Index index, Remark remark) {
         requireAllNonNull(index, remark);
 

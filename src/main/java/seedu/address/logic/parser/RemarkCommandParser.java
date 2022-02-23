@@ -15,7 +15,7 @@ public class RemarkCommandParser implements Parser<RemarkCommand> {
     @Override
     public RemarkCommand parse(String userInput) throws ParseException {
         requireNonNull(userInput);
-        ArgumentMultimap argMultimap = ArgumentTokenizer.tokenize(userInput,PREFIX_REMARK);
+        ArgumentMultimap argMultimap = ArgumentTokenizer.tokenize(userInput, PREFIX_REMARK);
 
         Index index;
         try {
